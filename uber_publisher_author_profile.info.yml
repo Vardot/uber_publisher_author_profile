@@ -34,7 +34,7 @@ dependencies:
   - views
   - views_bootstrap
   - yoast_seo
-version: 8.x-5.x-dev
+version: 8.x-4.x-dev
 package: 'Uber Publisher'
 'interface translation project': uber_publisher_author_profile
 'interface translation server pattern': profiles/uber_publisher/modules/uber_publisher_features/uber_publisher_author_profile/translations/%language.po
