@@ -10,7 +10,7 @@ dependencies:
     - field.field.node.author_profile.field_meta_tags
     - field.field.node.author_profile.field_profile_image
     - node.type.author_profile
-    - responsive_image.styles.d4
+    - responsive_image.styles.d04
   module:
     - ds
     - field_group
@@ -81,7 +81,7 @@ content:
     region: main
     label: hidden
     settings:
-      responsive_image_style: d4
+      responsive_image_style: d04
       image_link: ''
     third_party_settings: {  }
 hidden:

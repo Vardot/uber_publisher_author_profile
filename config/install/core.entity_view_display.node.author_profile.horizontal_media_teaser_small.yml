@@ -10,7 +10,7 @@ dependencies:
     - field.field.node.author_profile.field_meta_tags
     - field.field.node.author_profile.field_profile_image
     - node.type.author_profile
-    - responsive_image.styles.d1_square
+    - responsive_image.styles.d01_square
   module:
     - ds
     - panelizer
@@ -70,7 +70,7 @@ content:
     region: left
     label: hidden
     settings:
-      responsive_image_style: d1_square
+      responsive_image_style: d01_square
       image_link: ''
     third_party_settings:
       ds:
