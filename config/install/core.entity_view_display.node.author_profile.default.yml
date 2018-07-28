@@ -2,7 +2,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.fb_instant_articles
     - field.field.node.author_profile.body
     - field.field.node.author_profile.field_description
     - field.field.node.author_profile.field_image
@@ -15,10 +14,10 @@ dependencies:
     - metatag
     - user
 third_party_settings: {  }
-id: node.author_profile.fb_instant_articles
+id: node.author_profile.default
 targetEntityType: node
 bundle: author_profile
-mode: fb_instant_articles
+mode: default
 content:
   field_description:
     weight: 105
