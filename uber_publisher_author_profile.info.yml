@@ -7,7 +7,6 @@ dependencies:
   - ctools
   - ds
   - entity_browser
-  - features
   - field
   - field_group
   - file
