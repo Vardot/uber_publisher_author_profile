@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.author_profile.field_linked_user
     - field.field.node.author_profile.field_meta_tags
     - field.field.node.author_profile.field_profile_image
+    - field.field.node.author_profile.field_yoast_seo
     - image.style.thumbnail
     - node.type.author_profile
   module:
@@ -213,5 +214,7 @@ hidden:
   body: true
   field_linked_user: true
   field_meta_tags: true
+  field_yoast_seo: true
   langcode: true
   links: true
+  search_api_excerpt: true

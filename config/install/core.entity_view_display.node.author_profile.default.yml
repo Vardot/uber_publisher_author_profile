@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.author_profile.field_linked_user
     - field.field.node.author_profile.field_meta_tags
     - field.field.node.author_profile.field_profile_image
+    - field.field.node.author_profile.field_yoast_seo
     - node.type.author_profile
   module:
     - image
@@ -65,4 +66,6 @@ content:
     third_party_settings: {  }
 hidden:
   body: true
+  field_yoast_seo: true
   langcode: true
+  search_api_excerpt: true

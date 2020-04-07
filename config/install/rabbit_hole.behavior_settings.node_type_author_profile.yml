@@ -1,6 +1,8 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - node.type.author_profile
 id: node_type_author_profile
 action: display_page
 allow_override: 0
