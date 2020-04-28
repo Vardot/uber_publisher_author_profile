@@ -1,5 +1,5 @@
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.fb_instant_articles
@@ -15,12 +15,16 @@ dependencies:
     - image
     - metatag
     - user
-third_party_settings: {  }
 id: node.author_profile.fb_instant_articles
 targetEntityType: node
 bundle: author_profile
 mode: fb_instant_articles
 content:
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   field_description:
     weight: 105
     label: above

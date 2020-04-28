@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.author_profile.field_yoast_seo
     - image.style.thumbnail
     - node.type.author_profile
+    - workflows.workflow.varbase_basic_workflow
   module:
     - advanced_text_formatter
     - content_moderation
@@ -25,27 +26,14 @@ dependencies:
     - yoast_seo
 third_party_settings:
   field_group:
-    group_tabs:
-      children:
-        - group_basic_info
-        - group_media
-      parent_name: ''
-      weight: 0
-      format_type: tabs
-      region: content
-      format_settings:
-        id: ''
-        classes: ''
-        direction: horizontal
-      label: Tabs
     group_basic_info:
       children:
         - title
         - field_linked_user
         - field_description
-      parent_name: group_tabs
-      weight: 4
-      format_type: tab
+      parent_name: ''
+      weight: 0
+      format_type: fieldset
       region: content
       format_settings:
         id: ''
@@ -58,9 +46,9 @@ third_party_settings:
       children:
         - field_profile_image
         - field_image
-      parent_name: group_tabs
-      weight: 5
-      format_type: tab
+      parent_name: ''
+      weight: 1
+      format_type: fieldset
       region: content
       format_settings:
         id: ''
@@ -76,7 +64,7 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 4
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -106,7 +94,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_meta_tags:
-    weight: 6
+    weight: 5
     settings:
       sidebar: true
     third_party_settings: {  }
@@ -121,7 +109,7 @@ content:
     type: image_image
     region: content
   field_yoast_seo:
-    weight: 26
+    weight: 8
     settings:
       body: body
     third_party_settings: {  }
@@ -129,19 +117,19 @@ content:
     region: content
   moderation_state:
     type: moderation_state_default
-    weight: 100
-    settings: {  }
+    weight: 11
     region: content
+    settings: {  }
     third_party_settings: {  }
   path:
     type: path
-    weight: 5
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
   publish_on:
     type: datetime_timestamp_no_default
-    weight: 30
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -149,7 +137,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 8
+    weight: 7
     region: content
     third_party_settings: {  }
   title:
@@ -178,7 +166,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 3
+    weight: 2
     settings:
       match_operator: CONTAINS
       size: 60
@@ -188,12 +176,12 @@ content:
     third_party_settings: {  }
   unpublish_on:
     type: datetime_timestamp_no_default
-    weight: 30
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
   url_redirects:
-    weight: 7
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
