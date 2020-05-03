@@ -31,6 +31,7 @@ third_party_settings:
         - title
         - field_linked_user
         - field_description
+        - field_profile_image
       parent_name: ''
       weight: 0
       format_type: fieldset
@@ -42,21 +43,6 @@ third_party_settings:
         formatter: open
         required_fields: true
       label: 'Basic info'
-    group_media:
-      children:
-        - field_profile_image
-        - field_image
-      parent_name: ''
-      weight: 1
-      format_type: fieldset
-      region: content
-      format_settings:
-        id: ''
-        classes: ''
-        description: ''
-        formatter: closed
-        required_fields: true
-      label: Media
 id: node.author_profile.default
 targetEntityType: node
 bundle: author_profile
@@ -101,7 +87,7 @@ content:
     type: metatag_firehose
     region: content
   field_profile_image:
-    weight: 1
+    weight: 8
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
