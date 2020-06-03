@@ -22,6 +22,16 @@ variant_settings:
       uuid: 58f442f8-a23d-4cb8-baf1-7e38e17698b9
       context_mapping:
         entity: node
+    b810560b-638c-422f-af6f-a78feefcc423:
+      id: 'views_block:opinion_article-opinion_article_listing_per_user'
+      label: ''
+      provider: views
+      label_display: visible
+      items_per_page: none
+      region: main
+      weight: -1
+      uuid: b810560b-638c-422f-af6f-a78feefcc423
+      context_mapping: {  }
   id: panels_variant
   uuid: 29d5dfd6-135c-49ad-ae6b-b82e50998248
   label: null
