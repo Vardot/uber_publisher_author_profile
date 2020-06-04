@@ -12,7 +12,6 @@ dependencies:
     - field.field.node.author_profile.field_yoast_seo
     - image.style.thumbnail
     - node.type.author_profile
-    - views.view.author_profile
   module:
     - bootstrap_layouts
     - ds
@@ -228,19 +227,6 @@ third_party_settings:
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
-            weight: 0
-          79ec99c6-ff01-4e41-9859-726705d7cebf:
-            uuid: 79ec99c6-ff01-4e41-9859-726705d7cebf
-            region: bottom
-            configuration:
-              id: 'views_block:author_profile-articles_by_author_profile'
-              label: 'Author''s Articles'
-              provider: views
-              label_display: visible
-              views_label: 'Author''s Articles'
-              items_per_page: none
-              context_mapping: {  }
             additional: {  }
             weight: 0
         third_party_settings: {  }
