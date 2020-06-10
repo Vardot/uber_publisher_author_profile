@@ -27,7 +27,9 @@ variant_settings:
       label: ''
       provider: views
       label_display: visible
+      views_label: ''
       items_per_page: none
+      exposed: {  }
       region: main
       weight: -1
       uuid: b810560b-638c-422f-af6f-a78feefcc423

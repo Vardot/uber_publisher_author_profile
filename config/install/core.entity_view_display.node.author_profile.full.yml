@@ -229,6 +229,18 @@ third_party_settings:
                 view_mode: view_mode
             additional: {  }
             weight: 0
+          74eac750-d53c-414b-8f9e-53209efd77e6:
+            uuid: 74eac750-d53c-414b-8f9e-53209efd77e6
+            region: top
+            configuration:
+              id: 'extra_field_block:node:author_profile:content_moderation_control'
+              label: 'Moderation control'
+              provider: layout_builder
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
         third_party_settings: {  }
   layout_library:
     enable: false
