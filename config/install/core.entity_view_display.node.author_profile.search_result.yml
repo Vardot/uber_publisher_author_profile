@@ -1,0 +1,156 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.author_profile.body
+    - field.field.node.author_profile.field_description
+    - field.field.node.author_profile.field_image
+    - field.field.node.author_profile.field_linked_user
+    - field.field.node.author_profile.field_meta_tags
+    - field.field.node.author_profile.field_profile_image
+    - field.field.node.author_profile.field_yoast_seo
+    - node.type.author_profile
+    - responsive_image.styles.d04_traditional
+  module:
+    - ds
+    - field_group
+    - responsive_image
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        layout:
+          wrapper: div
+          classes:
+            row: row
+            col-sm-12: col-sm-12
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              row: row
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - group_authoring_information
+        - group_content_wrapper
+        - node_title
+        - field_profile_image
+        - langcode
+        - search_api_excerpt
+        - node_link
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 2
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h5
+          class: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+      node_link:
+        plugin_id: node_link
+        weight: 4
+        label: hidden
+        formatter: default
+  field_group:
+    group_authoring_information:
+      children:
+        - field_profile_image
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'col-xs12 col-sm-6 image-wrapper'
+      label: 'Main Media'
+      region: main
+    group_content_wrapper:
+      children:
+        - node_title
+        - search_api_excerpt
+        - node_link
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'col-xs12 col-sm-6 content-wrapper'
+      label: 'Content wrapper'
+      region: main
+id: node.author_profile.search_result
+targetEntityType: node
+bundle: author_profile
+mode: search_result
+content:
+  field_profile_image:
+    type: responsive_image
+    weight: 3
+    region: main
+    label: hidden
+    settings:
+      responsive_image_style: d04_traditional
+      image_link: content
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+  langcode:
+    type: language
+    weight: 3
+    region: main
+    label: above
+    settings:
+      link_to_entity: false
+      native_language: false
+    third_party_settings: {  }
+  search_api_excerpt:
+    weight: 3
+    region: main
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  content_moderation_control: true
+  field_description: true
+  field_image: true
+  field_linked_user: true
+  field_meta_tags: true
+  field_yoast_seo: true
+  links: true
