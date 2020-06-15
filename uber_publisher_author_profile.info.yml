@@ -1,7 +1,6 @@
 name: 'Uber Publisher Author Profile'
 description: 'Uber Publisher author profile content type with its dependents.'
 type: module
-core: 8.x
 dependencies:
   - content_moderation
   - ctools
@@ -32,7 +31,7 @@ dependencies:
   - views
   - views_bootstrap
   - yoast_seo
-version: 8.x-6.x-dev
 package: 'Uber Publisher'
+core_version_requirement: ^8 || ^9
 'interface translation project': uber_publisher_author_profile
 'interface translation server pattern': modules/contrib/uber_publisher_author_profile/translations/%language.po
