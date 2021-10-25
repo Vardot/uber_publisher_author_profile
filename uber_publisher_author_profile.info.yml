@@ -1,37 +1,13 @@
 name: 'Uber Publisher Author Profile'
 description: 'Uber Publisher author profile content type with its dependents.'
 type: module
-dependencies:
-  - content_moderation
-  - ctools
-  - ds
-  - entity_browser
-  - field
-  - field_group
-  - file
-  - focal_point
-  - image
-  - metatag
-  - node
-  - page_manager
-  - panels
-  - path
-  - pathauto
-  - rabbit_hole
-  - responsive_image
-  - smart_trim
-  - taxonomy
-  - text
-  - uber_publisher_core
-  - uber_publisher_fbia
-  - user
-  - varbase_core
-  - varbase_media
-  - varbase_seo
-  - views
-  - views_bootstrap
-  - yoast_seo
 package: 'Uber Publisher'
 core_version_requirement: ^8 || ^9
+dependencies:
+  - varbase_core:varbase_core
+  - varbase_media:varbase_media
+  - varbase_seo:varbase_seo
+  - uber_publisher_core:uber_publisher_core
+  - uber_publisher_core:uber_publisher_fbia
 'interface translation project': uber_publisher_author_profile
 'interface translation server pattern': modules/contrib/uber_publisher_author_profile/translations/%language.po
