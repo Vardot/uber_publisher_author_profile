@@ -8,6 +8,5 @@ dependencies:
   - varbase_media:varbase_media
   - varbase_seo:varbase_seo
   - uber_publisher_core:uber_publisher_core
-  - uber_publisher_core:uber_publisher_fbia
 'interface translation project': uber_publisher_author_profile
 'interface translation server pattern': modules/contrib/uber_publisher_author_profile/translations/%language.po
